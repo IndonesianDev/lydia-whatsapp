@@ -2,7 +2,7 @@ const { Client } = require('@open-wa/wa-automate')
 const { color } = require('../utils')
 const speak = require('../libs/lydia')
 const moment = require('moment-timezone')
-moment.tz.setDefault('Asia/Jakarta').locale('id')
+moment.tz.setDefault('Asia/Jakarta').locale('id') // Change your host timezone here
 
 module.exports = async function msgHandler(client = new Client(), message) {
     try {
@@ -14,9 +14,11 @@ module.exports = async function msgHandler(client = new Client(), message) {
         const args = body.trim().split(/ +/)
         const isCalled = args.includes('Lydia')
 
+        // Logs
         if ((quotedMsg && quotedMsgObj.fromMe || isCalled) && isGroupMsg) console.log(color('[EXEC]'), color(moment(t * 1000).format('DD/MM/YY HH:mm:ss'), 'yellow'), color(`Chat [${args.length}]`), 'from', color(pushname), 'in', color(name || formattedTitle))
         if ((quotedMsg && quotedMsgObj.fromMe || isCalled) && !isGroupMsg) console.log(color('[EXEC]'), color(moment(t * 1000).format('DD/MM/YY HH:mm:ss'), 'yellow'), color(`Chat [${args.length}]`), 'from', color(pushname))
 
+        // Processes
         if (quotedMsg && quotedMsgObj.fromMe) {
             client.simulateTyping(from, true)
             speak(args)
