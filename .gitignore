@@ -1,0 +1,11 @@
+# Dependencies folder
+node_modules
+
+# Session file
+*.data.json
+
+# Log file
+debug.log
+
+# Local folder
+.node-persist

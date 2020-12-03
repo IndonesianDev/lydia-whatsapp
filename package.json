@@ -1,0 +1,33 @@
+{
+  "name": "lydia-whatsapp",
+  "version": "0.0.1",
+  "description": "Machine learning chat bot that can talk about any topic in any language from WhatsApp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SlavyanDesu/lydia-whatsapp.git"
+  },
+  "keywords": [
+    "whatsapp-bot"
+  ],
+  "author": "SlavyanDesu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SlavyanDesu/lydia-whatsapp/issues"
+  },
+  "homepage": "https://github.com/SlavyanDesu/lydia-whatsapp#readme",
+  "devDependencies": {
+    "eslint": "^7.14.0"
+  },
+  "dependencies": {
+    "@open-wa/wa-automate": "^3.1.2",
+    "chalk": "^4.1.0",
+    "coffeehouse": "^1.0.1",
+    "moment-timezone": "^0.5.32",
+    "sharp": "^0.26.3"
+  }
+}
