@@ -24,7 +24,7 @@
     "eslint": "^7.14.0"
   },
   "dependencies": {
-    "@open-wa/wa-automate": "^3.1.2",
+    "@open-wa/wa-automate": "^3.1.10",
     "chalk": "^4.1.0",
     "coffeehouse": "^1.0.1",
     "moment-timezone": "^0.5.32",
