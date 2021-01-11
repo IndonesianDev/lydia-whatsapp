@@ -12,4 +12,7 @@ Then:
 ```bash
 > npm start
 ```
-Authenticate the QR code and send text Lydia to authenticated WhatsApp number.
+Authenticate the QR code.
+
+## Usage
+Send a text contain "Lydia" to bot or reply to existing message.
